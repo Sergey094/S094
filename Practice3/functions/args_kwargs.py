@@ -1,0 +1,23 @@
+def my_function(*args):
+    print("Type:", type(args))
+    print("First argument:", args[0])
+    print("Second argument:", args[1])
+    print("All arguments:", args)
+
+my_function("Emil", "Tobias", "Linus")
+
+
+def my_function1(**kid):
+  print("His last name is " + kid["lname"])
+
+my_function1(fname = "Tobias", lname = "Refsnes")
+
+
+def my_function2(**myvar):
+  print("Type:", type(myvar))
+  print("Name:", myvar["name"])
+  print("Age:", myvar["age"])
+  print("All data:", myvar)
+
+my_function2(name = "Tobias", age = 30, city = "Bergen")
+
