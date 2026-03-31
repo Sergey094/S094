@@ -1,9 +1,7 @@
 n = int(input())
-st = []
+st = set()
 
 for i in range(n):
-    name = input()
-    if name not in st:
-        st.append(name)
+    st.add(input())
 
 print(len(st))
