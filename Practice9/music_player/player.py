@@ -1,5 +1,6 @@
 import pygame
 import os
+import random
 
 class MusicPlayer:
     def __init__(self):
@@ -12,7 +13,7 @@ class MusicPlayer:
             os.path.join(BASE_DIR, "music", "sample_tracks", "Yrban.mp3"),
             os.path.join(BASE_DIR, "music", "sample_tracks", "Shum.mp3"),
         ]
-        self.current = 0
+        self.current = random.randint(0,2)
 
         self.font = pygame.font.SysFont(None, 36)
         self.small_font = pygame.font.SysFont(None, 28)
