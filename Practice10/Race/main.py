@@ -6,7 +6,7 @@ import os
 pygame.init()
 
 # ------------------ PATHS ------------------
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))   
 
 def load_image(filename, color=None, w=None, h=None):
     try:
@@ -89,9 +89,9 @@ while running:
         # движение игрока
         keys = pygame.key.get_pressed()
         if keys[pygame.K_LEFT]:
-            player.x -= 6
+            player.x -= 16
         if keys[pygame.K_RIGHT]:
-            player.x += 6
+            player.x += 16
 
         # враг
         enemy.y += speed
@@ -116,7 +116,7 @@ while running:
             coin.x = random.randint(0, 350)
 
         # скорость
-        speed = min(10, 5 + score * 0.1)
+        speed = min(10, 5 + score * 0.1)+10
 
         # draw
         screen.blit(player_img, player)
