@@ -1,0 +1,7 @@
+# config.py — database connection settings
+
+DB_HOST     = "localhost"
+DB_PORT     = 5432
+DB_NAME     = "snake_db"
+DB_USER     = "postgres"
+DB_PASSWORD = "710710Aktakt_"   # <-- замени на свой пароль
